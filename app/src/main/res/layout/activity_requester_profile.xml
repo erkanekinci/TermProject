@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".termproject.ProfileActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="140dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="404dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.171"
+        tools:srcCompat="@drawable/baseline_person_24" />
+
+    <EditText
+        android:id="@+id/adsoyadText"
+        android:layout_width="160dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="15dp"
+        android:hint="Ad Soyad"
+        app:layout_constraintBottom_toTopOf="@+id/telefonText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/telefonText"
+        android:layout_width="161dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="12dp"
+        android:hint="Telefon no"
+        app:layout_constraintBottom_toTopOf="@+id/uzaklıkText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/uzaklıkText"
+        android:layout_width="162dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="256dp"
+        android:hint="İstenen uzaklık"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <EditText
+        android:id="@+id/bolumText"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="372dp"
+        android:hint="Bölüm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/adsoyadText" />
+
+    <EditText
+        android:id="@+id/sinifText"
+        android:layout_width="137dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Sınıf"
+        app:layout_constraintBottom_toTopOf="@+id/sureText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/telefonText"
+        app:layout_constraintTop_toBottomOf="@+id/bolumText" />
+
+    <EditText
+        android:id="@+id/sureText"
+        android:layout_width="137dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="42dp"
+        android:hint="Süre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/uzaklıkText"
+        app:layout_constraintTop_toBottomOf="@+id/sinifText" />
+
+    <Button
+        android:id="@+id/acceptButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginBottom="38dp"
+        android:text="Onayla"
+        app:layout_constraintBottom_toTopOf="@+id/declineButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/declineButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginBottom="46dp"
+        android:text="Reddet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/wAButton"
+        android:layout_width="78dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="95dp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/bolumText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/whatsapp_icon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
